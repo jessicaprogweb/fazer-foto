@@ -11,18 +11,14 @@
 			padding: 0;
 		}
 
+	
 		@font-face {
-		  font-family: Viafont;
-		  src: url(Viafont.otf)
-		}
-
-		@font-face {
-		  font-family: Plakativ;
-		  src: url(Plakativ.otf)
+		  font-family: Matamata-Regular;
+		  src: url(Matamata-Regular.otf)
 		}
 
 		.logo {
-			font-family: Viafont;
+			font-family: Matamata-Regular;
 			font-size: 1.5rem;
 			text-decoration: inherit;
 			color: black;
@@ -30,6 +26,7 @@
 		}
 
 		.banner {
+			margin-bottom: 0;
 		
 		}
 
@@ -40,14 +37,15 @@
 		}
 
 		header {
-			margin-top: 0.5rem;
-			margin-bottom: 0.5rem;
+			margin-top: 3rem;
+			margin-bottom: 3rem;
 			margin-left: 0.5rem;
+			text-align: center;
 			
 		}
 
 		h1 {
-			font-family: Plakativ;
+			font-family: Matamata-Regular;
 			text-align: center;
 			margin-top: 0.2rem;
 		}
@@ -62,8 +60,8 @@
 		}
 
 		.bloco-2 {
-			background: darkblue;
-			margin-top: 2rem;
+			background-image: linear-gradient(to right, #031454, #3b58c4);
+			margin-top: 0;
 			padding-top: 2rem;
 			padding-bottom: 2rem;
 
@@ -71,7 +69,10 @@
 
 		.bloco-2 h1 {
 			color: white;
-			letter-spacing: 1px;
+			margin-left: 2rem;
+			margin-right: 2rem;
+			margin-top: 0.5rem;
+			margin-bottom: 0.5rem;
 		}
 
 		.bloco-2 ul {
@@ -85,12 +86,72 @@
 		}
 
 		.bloco-2 li {
-			padding-top: 1rem;
+			padding-top: 1.5rem;
 			padding-bottom: 1rem;
 			text-align: center;
 			border-bottom: 2px solid white;
+			margin-left: 2rem;
+			margin-right: 2rem;
+			list-style-type: none;
 
 		}
+
+		.bloco-3 {
+			margin-top: 3rem;
+		}
+
+		.bloco-3 h1 {
+			margin-bottom: 2rem;
+		}
+
+		.bloco-3 img {
+			width: 100px;
+			height: 100px;
+			border-radius: 100px;
+			border-top: 1px solid black;
+			border-right: 2px solid black;
+			border-bottom: 3rem;
+
+		}
+
+		.bloco-4 {
+			margin-top: 3rem;
+		}
+
+		.bloco-4 img {
+			width: 100px;
+			height: 100px;
+			border-radius: 100px;
+			border-top: 1px solid black;
+			border-right: 2px solid black;
+			border-bottom: 3rem;
+
+		}
+
+		#sub-logo {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			margin-left: 0.5rem;
+		}
+
+		footer {
+			background: black;
+			color: white;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 10px;
+			margin-top: 5rem;
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+			text-align: center;
+		}
+
+		footer a {
+			text-decoration: underline;
+			color: white;
+
+		}
+
+
 
 		
 		
@@ -102,19 +163,16 @@
 <body>
 	<div>
 		<header>
-				<a class="logo" href="index.html">FAZER FOTO</a>
+				<a class="logo" href="index.html">FAZER FOTO<span id="sub-logo">By Tiago Neves</span></a>
 		</header>
 		
 		<div class="banner">
 			<img src="img1.jpg">
 		</div>
 
-		<div class="bloco-1">
-			<h1>APRENDA A FAZER FOTOS INCRÍVEIS</h1>
-			<h2>Vou te ensinar a faturar mais + de 4 dígitos por mês. Chega de promessas que não se cumprem, se você não alcançar o resultado desejado, devolvemos todo o seu dinheiro.</h2>
-		</div>
-
 		<div class="bloco-2">
+			<h1>↓</h1>
+			<br>
 			<h1>ESSA É A SUA OPORTUNIDADE DE TER INDEPENDÊNCIA FINANCEIRA, VOCÊ VAI APRENDER:</h1>
 			<ul>
 				<li>Manusear corretamente uma câmera profissional;</li>
@@ -125,10 +183,27 @@
 			</ul>
 
 		</div>
+
+		<div class="bloco-3" align="center">
+			<h1>VEJA OS FEEDBACKS DE NOSSOS ALUNOS</h1>
+			<img src="img2.png">
+			<h2><i>"O curso foi essencial para que minha vida profissional mudasse para melhor." - Adriana Lima</i></h2>
+
+		</div>
+
+		<div class="bloco-4" align="center">
+			<img src="img3.png">
+			<h2><i>"Gratidão ao curso pela oportunidade de faturar em 1 mês o que não fiz em 5 meses como fotógrafa" - Bia Chagas</i></h2>
+
+		</div>
 		
 		</div>
 
 	</div>
+
+	<footer>
+		2022 © FAZER FOTO | Desenvolvido por <a href="https://www.linkedin.com/in/jessicacordeiro20/" target="_blank">Jéssica Cristina</a>
+	</footer>
 	
 
 </body>
